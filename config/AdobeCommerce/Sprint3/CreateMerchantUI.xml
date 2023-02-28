@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Adobe Commerce" verbose="0">
+    <test name="Create Merchant" enabled="true">
+        <parameter name="key.name" value="Create"/>
+        <classes>
+            <class name="com.test.createMerchant_UITest">
+                <methods>
+                    <include name="AdobeCommerceLogin"/>
+                    <include name="openCustomersPage"/>
+                    <include name="CreateNewCustomer"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
